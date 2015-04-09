@@ -6,3 +6,4 @@ dependencies[] = migrate
 dependencies[] = migrate_d2d
 
 files[] = node.inc
+files[] = migrate_dhs.inc
