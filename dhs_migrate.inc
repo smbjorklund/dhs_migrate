@@ -9,7 +9,6 @@ function dhs_migrate_migrate_api() {
     'groups' => array(
       'content_migration' => array(
         'title' => t('DHS Drupal 6 to Drupal 7 migrations.'),
-        'default_format' => 'filtered_html',
       ),
     ),
   );
@@ -21,6 +20,8 @@ function dhs_migrate_migrate_api() {
     'group_name' => 'content_migration',
     'format_mappings' => array(
       '1' => 'filtered_html',
+      '2' => 'full_html',
+      '3' => 'editor',
     ),
   );
 
