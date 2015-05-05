@@ -7,3 +7,4 @@ dependencies[] = migrate_d2d
 
 files[] = node.inc
 files[] = image.inc
+files[] = album.inc

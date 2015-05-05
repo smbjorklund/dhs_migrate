@@ -24,9 +24,3 @@ class ArticleMigration extends DHSNodeMigration {
          ->sourceMigration('Topics');
   }
 }
-
-class AlbumMigration extends DHSNodeMigration {
-  public function __construct(array $arguments) {
-    parent::__construct($arguments);
-  }
-}
