@@ -32,6 +32,17 @@ function dhs_migrate_migrate_api() {
     'class_name' => 'DrupalUser6Migration',
   );
 
+  // Register the file migration.
+  $api['migrations']['File'] = $common_arguments + array(
+    'machine_name' => 'ExampleFile',
+    'description' => t('Import Drupal 6 files'),
+    'class_name' => 'DrupalFile6Migration',
+    'user_migration' => 'User',
+    'default_uid' => 4,
+    'source_dir' => '/Users/steinmb/Downloads/dhsbilder',
+    'destination_dir' => 'public://legacy_files',
+  );
+
   // For vocabulary migrations, source_vocabulary and destination_vocabulary are
   // required arguments. Note that in Drupal 6 vocabularies did not have machine
   // names, so we use the vocabulary ID to uniquely identify them.
