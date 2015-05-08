@@ -34,7 +34,7 @@ function dhs_migrate_migrate_api() {
 
   // Register the file migration.
   $api['migrations']['File'] = $common_arguments + array(
-    'machine_name' => 'ExampleFile',
+    'machine_name' => 'filemigration',
     'description' => t('Import Drupal 6 files'),
     'class_name' => 'DrupalFile6Migration',
     'user_migration' => 'User',
