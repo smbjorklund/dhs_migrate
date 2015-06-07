@@ -7,6 +7,6 @@ dependencies[] = migrate_d2d
 
 files[] = album.inc
 files[] = article.inc
-files[] = dhs_migrate_migrate.inc
+files[] = dhs_migrate.migrate.inc
 files[] = image.inc
 files[] = node.inc
