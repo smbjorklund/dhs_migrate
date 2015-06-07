@@ -2,7 +2,4 @@
 
 /**
  * @file dhs_migrate.module
- * Nothing here to see.
  */
-
-include_once('dhs_migrate.inc');
