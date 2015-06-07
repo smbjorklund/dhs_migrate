@@ -7,14 +7,14 @@ class ImageMigration extends DHSNodeMigration {
     $this->addFieldMapping('field_photo_beskrivelse', 'field_text');
 
     $this->addFieldMapping('field_album_foto', 'field_photo')
-      ->sourceMigration('File');
+         ->sourceMigration('File');
     $this->addFieldMapping('field_album_foto:file_class')
-      ->defaultValue('MigrateFileFid');
+         ->defaultValue('MigrateFileFid');
     $this->addFieldMapping('field_album_foto:preserve_files')
-      ->defaultValue(TRUE);
+         ->defaultValue(TRUE);
 
     $this->addFieldMapping('field_fotoalbum', 'field_fotoalbum')
-      ->sourceMigration('Album');
+         ->sourceMigration('Album');
 
     $this->addFieldMapping('field_bilde_tagg', '5')
          ->sourceMigration('ImageTags');
