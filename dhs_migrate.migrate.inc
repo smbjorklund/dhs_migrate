@@ -57,6 +57,11 @@ function dhs_migrate_migrate_api() {
       'source_vocabulary' => '1',  // D6 Vocabulary ID
       'destination_vocabulary' => 'tags',
     ),
+    'Category' => array(
+      'description' => t('Migration of Catecgory terms from Drupal 6'),
+      'source_vocabulary' => '4',  // D6 Vocabulary ID
+      'destination_vocabulary' => 'category',
+    ),
   );
 
   // Again, we're using the migrate_d2d class directly.
