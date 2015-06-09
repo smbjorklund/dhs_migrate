@@ -8,6 +8,6 @@ abstract class DHSNodeMigration extends DrupalNode6Migration {
     parent::__construct($arguments);
 
     $this->addFieldMapping('field_legacy_nid', 'nid')
-      ->description('We have a common field to save the D6 nid');
+         ->description('We have a common field to save the D6 nid');
   }
 }
