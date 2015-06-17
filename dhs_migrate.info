@@ -10,3 +10,4 @@ files[] = article.inc
 files[] = dhs_migrate.migrate.inc
 files[] = image.inc
 files[] = node.inc
+files[] = term.inc

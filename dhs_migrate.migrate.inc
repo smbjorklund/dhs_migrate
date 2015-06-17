@@ -56,11 +56,13 @@ function dhs_migrate_migrate_api() {
       'description' => t('Migration of Topics terms from Drupal 6'),
       'source_vocabulary' => '1',  // D6 Vocabulary ID
       'destination_vocabulary' => 'tags',
+      'class_name' => 'DHSTerm6Migration',
     ),
     'Category' => array(
       'description' => t('Migration of Catecgory terms from Drupal 6'),
       'source_vocabulary' => '4',  // D6 Vocabulary ID
-      'destination_vocabulary' => 'category',
+      'destination_vocabulary' => 'tags',
+      'class_name' => 'DHSTerm6Migration',
     ),
   );
 
