@@ -18,8 +18,17 @@ class ArticleMigration extends DHSNodeMigration {
     $this->addFieldMapping('field_innhold_foto:preserve_files')
         ->defaultValue(TRUE);
 
-    // Note that we map migrated terms by the vocabulary ID.
-    $this->addFieldMapping('field_tagg', '1')
+    // Norwegian topic.
+    $this->addFieldMapping('field_innhold_tagg', '1')
          ->sourceMigration('Topics');
+    $this->addFieldMapping('field_innhold_tagg:source_type')
+         ->defaultValue('tid');
+
+    // English topic.
+    $this->addFieldMapping('field_innhold_tagg_en', '4')
+         ->sourceMigration('Category');
+    $this->addFieldMapping('field_innhold_tagg_en:source_type')
+         ->defaultValue('tid');
+
   }
 }
