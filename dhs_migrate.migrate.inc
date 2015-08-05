@@ -39,7 +39,7 @@ function dhs_migrate_migrate_api() {
     'class_name' => 'DrupalFile6Migration',
     'user_migration' => 'User',
     'default_uid' => 4,
-    'source_dir' => '/Users/steinmb/Downloads/dhsbilder',
+    'source_dir' => 'DRUPAL_ROOT . '/../d6_files,
     'destination_dir' => 'public://legacy_files',
   );
 
